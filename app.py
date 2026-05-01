@@ -464,7 +464,7 @@ with right:
     st.pyplot(fig_rep, use_container_width=True)
 
 # Résumé pour le rapport
-st.subheader("📋 Résumé prêt pour le rapport")
+st.subheader("📋 Résumé du résultat")
 resume = generer_resume(
     nb_noeuds,
     nb_chemins,
@@ -477,7 +477,7 @@ resume = generer_resume(
     poa,
     repartition_centralisee,
 )
-st.text_area("Vous pouvez copier ce résumé dans le rapport", resume, height=260)
+st.text_area("", resume, height=260)
 
 csv_data = generer_csv(historique, delais_base)
 st.download_button(
