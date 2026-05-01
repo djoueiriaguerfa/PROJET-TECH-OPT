@@ -464,7 +464,7 @@ with right:
     st.pyplot(fig_rep, use_container_width=True)
 
 # Résumé pour le rapport
-st.subheader("📋 Résumé du résultat")
+st.subheader("📋 Résumé des résultat")
 resume = generer_resume(
     nb_noeuds,
     nb_chemins,
